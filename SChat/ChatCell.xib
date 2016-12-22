@@ -12,7 +12,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="idCellChat" rowHeight="90" id="F62-I8-xka" customClass="ChatCell" customModule="SocketChat" customModuleProvider="target">
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="chatCell" rowHeight="90" id="F62-I8-xka" customClass="ChatCell" customModule="SChat" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="320" height="90"/>
             <autoresizingMask key="autoresizingMask"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="F62-I8-xka" id="8ud-zM-z7L">
@@ -60,8 +60,8 @@
             </tableViewCellContentView>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <connections>
-                <outlet property="lblChatMessage" destination="vGY-vB-1NI" id="YXj-Ms-qiB"/>
-                <outlet property="lblMessageDetails" destination="ZuJ-v8-Xlf" id="sQu-zY-NMu"/>
+                <outlet property="chatMsgLabel" destination="vGY-vB-1NI" id="fCF-qg-BJv"/>
+                <outlet property="msgDetailLabel" destination="ZuJ-v8-Xlf" id="CXx-tU-XSL"/>
             </connections>
             <point key="canvasLocation" x="903" y="305"/>
         </tableViewCell>
