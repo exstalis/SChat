@@ -72,6 +72,9 @@
                     <navigationItem key="navigationItem" id="tgc-dH-T1c">
                         <barButtonItem key="rightBarButtonItem" image="logoutIcon" id="7ri-Yr-z48">
                             <color key="tintColor" red="0.33725490200000002" green="0.38823529410000002" blue="0.55294117649999996" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <action selector="onExitChat:" destination="tVw-XF-O9z" id="9zw-0R-qRR"/>
+                            </connections>
                         </barButtonItem>
                     </navigationItem>
                     <connections>
