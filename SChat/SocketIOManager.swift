@@ -22,4 +22,13 @@ class SocketIOManager: NSObject {
     func closeConnection() {
         socket.disconnect()
     }
+    func connectServerWithNickname(_ nickname: String, completionHandler:@escaping (_ userList:[[String: AnyObject]])-> Void){
+//        socket.emit("connectUser", nickname)
+//        socket.on("userList") { ( dataArray, ack) -> Void in
+//            completionHandler(userList: dataArray[0] as! [[String: AnyObject]])
+        socket.on("userList") { (dataArray, acknowledgement) in
+            completionHandler(dataArray[0] as! [[String: AnyObject]])
+        }
+        
+    }
 }
